@@ -15,14 +15,15 @@
           <!-- Add a ui-sref property to the anchor tags to allow navigation between different states -->
           <nav>
             <ul class="nav nav-pills">
-              <li><a>List View</a></li>
-              <li><a>Map View</a></li>
-              <li><a>Create New Listing</a></li>
+              <li><a href="/listings">List View</a></li>
+              <li><a href="/listings/map">Map View</a></li>
+              <li><a href="listings/create">Create New Listing</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div ui-view></div>
+      <div ui-view>
+      </div>
     </div>
     <!-- Dependencies -->
     <script src="/public/lib/jquery/dist/jquery.min.js"></script
@@ -32,7 +33,7 @@
     <script src="/public/lib/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="/public/lib/lodash/dist/lodash.min.js"></script>
     <script src="/public/lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
-    <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA5KXyg2Qp7zxmFvuAYn9oEKKR76rcwmJs&sensor=false'></script>
     <script src="/public/lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
 
     <!-- Application Source Code -->
